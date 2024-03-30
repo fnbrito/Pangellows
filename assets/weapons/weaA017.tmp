@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci4n5rnyowoww"]
+
+[ext_resource type="Texture2D" uid="uid://bfcmub63ic5jf" path="res://assets/weapons/w_bellows.png" id="1_mdulj"]
+[ext_resource type="Script" path="res://assets/weapons/weapon.gd" id="1_tbyjv"]
+
+[node name="Weapon" type="Area2D"]
+script = ExtResource("1_tbyjv")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Marker2D"]
+texture = ExtResource("1_mdulj")
+
+[node name="Furo" type="Marker2D" parent="Marker2D/Sprite2D"]
+unique_name_in_owner = true
+position = Vector2(0, -107)
