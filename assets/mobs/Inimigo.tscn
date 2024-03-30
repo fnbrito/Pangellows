@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3pwpvfnea7vd"]
+
+[ext_resource type="Texture2D" uid="uid://c6cc7qyicy1s0" path="res://assets/mobs/bubble.png" id="1_t282j"]
+
+[node name="Inimigo" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_t282j")

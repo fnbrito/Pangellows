@@ -7,9 +7,12 @@
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ewwb3")
 
-[node name="LevelBox" parent="." instance=ExtResource("3_gxuku")]
-
-[node name="Character" parent="LevelBox" instance=ExtResource("1_gl4nm")]
+[node name="Character" parent="." instance=ExtResource("1_gl4nm")]
 unique_name_in_owner = true
-position = Vector2(-9, 351)
 scale = Vector2(0.25, 0.25)
+
+[node name="LevelBox" parent="." instance=ExtResource("3_gxuku")]
+position = Vector2(0, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+ignore_rotation = false
