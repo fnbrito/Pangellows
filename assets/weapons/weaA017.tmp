@@ -9,8 +9,6 @@ script = ExtResource("1_tbyjv")
 [node name="Marker2D" type="Marker2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Marker2D"]
-position = Vector2(0, -40)
-scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_mdulj")
 
 [node name="Furo" type="Marker2D" parent="Marker2D/Sprite2D"]

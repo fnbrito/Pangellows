@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://fqmb3u34653x" path="res://assets/character/character_raster.png" id="1_er8i1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tky7o"]
-size = Vector2(240, 383)
+size = Vector2(72, 96)
 
 [node name="Character" type="CharacterBody2D"]
 disable_mode = 1
@@ -13,9 +13,8 @@ script = ExtResource("1_2pk18")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_tky7o")
 
 [node name="CharacterRaster" type="Sprite2D" parent="."]
-position = Vector2(-1, -2)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_er8i1")

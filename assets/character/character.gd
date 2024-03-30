@@ -37,11 +37,11 @@ func _physics_process(delta):
 		# ativação enquando move para esquerda), diminui velocidade por 6 por tick
 		spd -= 20
 			
-	if spd < 10 && spd > -10 && not Input.is_action_pressed("left") && not Input.is_action_pressed("move_right"):
+	if spd < 10 && spd > -10 && not Input.is_action_pressed("left") && not Input.is_action_pressed("right"):
 		# Se spd estiver entre -4 e 4 e nenhum botao pressionado, spd = 0
 		# (prevenir movimento se nada estiver sendo pressionado)
 		spd = 0
-			
+		
 	# gravidade
 	if not is_on_floor():
 		# se não é um pulo
